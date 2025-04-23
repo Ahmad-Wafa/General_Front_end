@@ -1,0 +1,32 @@
+@media screen and (max-width: 376px){
+    body {
+        margin: 1rem;
+    }
+    .fdiv {
+        width: 370px;
+        margin: 1rem;
+    }
+    .p-title {
+        font-size: .8rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .box1 ,.box2 ,.box3 ,.box4 {
+        box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.312);
+    }
+    .parent {
+        width: 100%;
+    }
+    .box1 ,.box4 {
+        width: fit-content;
+    }
+    .box1 p {
+        font-size: .8rem;
+    }
+    footer:hover {
+        background-color: rgb(18, 18, 18);
+        transform: translateY(-.5rem);
+        color: white;
+    }     
+}

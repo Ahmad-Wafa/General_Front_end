@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Red: hsl(0, 65%, 40%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+}
+body {
+    font-family: "Poppins";
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(154, 132, 132, 0.188);
+    margin: 10px;
+    font-size: 15px;
+}
+                                                                            /* Start Div Title */
+
+.fdiv {
+    display: flex;
+    flex-direction: column;
+    width: 29rem;
+}
+.first-h1 {
+    font-size: clamp(1.4rem, 4vw, 1.9rem);
+    text-align: center;
+    font-weight: 200;
+    color: var(--Very-Dark-Blue);
+}
+.second-h1 {
+    text-align: center;
+    opacity: 0.6;
+    letter-spacing: 0.3px;
+    margin-bottom: .5rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+.p-title {
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: clamp(.2rem, 2vw, .8rem);
+}
+                                                                            /* End Div Title */
+
+                                                                            /* Start Box */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin: .7rem
+}         
+.box1,.parent,.box4 {
+    width: calc((100% - 2rem)/3);
+    
+}   
+.box1,.box2,.box3,.box4 {
+    position: relative;
+    background-color: white;
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    overflow: hidden;
+    transition-duration: 1s;
+
+        h4 {
+            opacity: 0.6;
+        }
+        p {
+            font-size: .7rem;
+            padding: .5rem 0 1.2rem 0 ;
+            color: var(--Grayish-Blue);
+        }
+        img {
+            float: right;
+        }
+    
+}   
+.box1 span.bar,.box2 span.bar,.box3 span.bar,.box4 span.bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 4px;
+    width: 0;
+    transition: 1s;
+}
+.box1:hover span.bar,.box2:hover span.bar,.box3:hover span.bar,.box4:hover span.bar{
+    width: 100%;
+}
+.box1:hover ,.box2:hover ,.box3:hover ,.box4:hover  {
+    transform: translateY(-.7rem);
+}
+.parent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}      
+.box1 span.bar{
+background-color: var(--Cyan);
+}
+.box2 span.bar{
+background-color:var(--Red);
+}                                                               
+.box3 span.bar{
+
+background-color: var(--Orange);
+}                                                               
+.box4 span.bar {
+    background-color: var(--Blue);
+}      
+footer {
+    position: static;
+    bottom: 65px;
+    right: 100px;
+    padding: 0.8rem;
+    background-color: hsl(234deg 12% 34% / 44%);
+    border-radius: 1rem;
+    transition-duration: 1s
+}       
+footer:hover {
+    background-color: rgb(18, 18, 18);
+    transform: translateY(-.5rem);
+    color: white;
+}                                                  
+                                                                            /* End Box */
