@@ -1,0 +1,113 @@
+@import url(https://fonts.google.com/specimen/Inter);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+:root {
+    --Greencolor: hsl(75, 94%, 57%);
+    --Grey_700: hsl(0, 0%, 20%);
+    --Grey_800: hsl(0, 0%, 12%);
+    --Grey_900: hsl(0, 0%, 8%)
+}
+body {
+    display: flex;
+    font-family: Inter;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+    background-color: var(--Grey_900);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.146);
+    padding: 35px 15px 15px 15px;
+    width: 318px;
+    border-radius: 26px;
+    background-color: var(--Grey_800);
+}
+main img {
+    border-radius: 50%;
+    width: 75px;
+    animation-name: ani-image;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+main h1 {
+    padding: 15px 0 5px 0;
+    font-size: 25px;
+    color: white;
+    font-weight: 800;
+}
+main h3 {
+    font-size: 14px;
+    padding-bottom: 25px;
+    color: var(--Greencolor);
+    font-weight: 500;
+}
+main p {
+    font-size: 15px;
+    color: white;
+}
+main ul {
+    width: 100%;
+    padding: 10px
+}
+
+main ul li {
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    padding: 7px;
+    background-color: var(--Grey_700);
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: .5s;
+}
+main ul li:hover {
+    background-color: var(--Greencolor);
+    
+}
+main ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+main ul li:hover a{
+    color: var(--Grey_700);
+    letter-spacing: 2px;
+}
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 1rem;
+    background-color: var(--Grey_700);
+    font-size: 14px;
+    color: white;
+    transition: .5s;
+}
+.attribution:hover {
+    background-color: var(--Grey_900);
+    box-shadow: 0 0 15px 0 var(--Grey_700) ;
+}
+@keyframes ani-image {
+0% {
+translate: 0 0;
+}   
+50% {
+translate: 0 -4px;
+} 
+100% {
+translate: 0 0;
+}
+}
