@@ -1,0 +1,125 @@
+@import url();
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --Light-gray: hsl(0, 0%, 81%)
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-gray);
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,calc(25% - 0.75rem));
+    grid-template-rows: repeat(2,calc(50% - 0.5rem));
+    gap: 1rem;
+    width: 85%;
+    min-height: 75%;
+    padding: .5rem;
+}
+.div1 {  /*   <<<<   DIV 1 >>> */
+    background-color: var(--Moderate-violet);
+    padding: 1rem ;
+    grid-column: span 2;
+    border-radius: .7rem;
+}
+.div2 {    /*   <<<<   DIV 2 >>> */
+    background-color: var(--Very-dark-blackish-blue);
+    padding: 1rem ;
+    grid-column: span 1;
+    border-radius: .7rem;
+}
+.div3 {     /*   <<<<   DIV 3 >>> */
+    background-color: white;
+    padding: 1rem ;
+    grid-column: span 1;
+    grid-row: span 2;
+    border-radius: .7rem;
+    .title h3 {
+        color: black;
+    }
+    .title p {
+        color: black;
+    }
+    .info h5 {
+        color: black;
+    }
+    .info h6 {
+        color: black;
+    }
+}
+.div4 {     /*   <<<<   DIV 4 >>> */
+    background-color: white;
+    padding: 1rem ;
+    grid-column: span 1;
+    border-radius: .7rem;
+    .title h3 {
+        color: black;
+    }
+    .title p {
+        color: black;
+    }
+    .info h5 {
+        color: black;
+    }
+    .info h6 {
+        color: black;
+    }
+}
+.div5 {     /*   <<<<   DIV 5 >>> */
+    background-color: var(--Very-dark-blackish-blue);
+    padding: 1rem ;
+    grid-column: span 2;
+    border-radius: .7rem;
+}
+
+    /* Common Features */
+.head {
+    display: flex;
+    align-items: center;
+    margin-bottom: .9rem;
+    #Daniel {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #ffffff5e;
+    }
+    .info {
+        margin-left: 1rem;
+    }
+    .info h5 {
+        font-size: .7rem;
+        padding: .3rem 0;
+    }
+    .info h6 {
+        font-size: .6rem;
+        opacity: .5;
+    }
+}
+.title h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.title p {
+    font-size: .8rem;
+    padding: .5rem 0;
+    opacity: .5;
+}
+.attribution {
+    margin: 0.8rem 0 0 0;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+
