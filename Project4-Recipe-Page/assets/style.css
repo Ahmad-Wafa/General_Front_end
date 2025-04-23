@@ -1,0 +1,141 @@
+@import url(https://fonts.google.com/specimen/Young+Serif);
+@import url(https://fonts.google.com/specimen/Outfit);
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 14px;
+font-family: Young Serif;
+font-family: Outfit;
+
+}
+:root {
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+}
+@media (max-width : 350px)
+{
+main {
+    margin: 0;
+    padding: 0;
+}
+main img {
+    width: 500px;
+}
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: rgb(202 22 139 / 41%);
+}
+main {
+flex-direction: column;
+padding: 1.8rem;
+background-color: white;
+}
+@media (min-width : 401px) {
+main {
+    margin: 50px 0;
+    width: 570px;
+    border-radius: 1rem;
+}
+}
+main  img {
+max-width: 100%;
+border-radius: 0.8rem;
+}
+main h1 {
+margin: 20px 0px 20px 0px;
+font-size: 2.4rem;
+color: var(--Stone-900);
+
+}
+main .out {
+color: var(--Stone-600);
+margin: 1rem 0 1.5rem 0;
+}
+main .Preparation {
+padding: 1.5rem;
+border-radius: 1rem;
+background-color:  hsl(330, 100%, 98%);
+}
+main .Preparation h3 {
+padding: 0 0.5rem;
+color: var(--Rose-800);
+font-weight: bold;
+font-size: 1.2rem;
+}
+main .Preparation ul {
+padding: 0 1.6rem;
+color: var(--Rose-800);
+}
+main .Preparation ul .one {
+color: var(--Stone-900);
+}
+main .Preparation ul .two {
+color: var(--Stone-600);
+}
+main .Preparation ul li {
+padding: 0.5rem;
+}
+main  ul {
+padding-left: 1.7rem;
+}
+main ul li {
+padding: 0.5rem;
+color: var(--Stone-600);
+}
+
+main hr {
+margin: 1rem 0;
+}
+main  .Ingredients {
+font-size: 2rem;
+padding: 1rem 0 0.3rem 0;
+font-weight: 700;
+color: var(--Brown-800);
+}
+.Nutrition 
+,.Instructions {
+font-size: 2rem;
+font-weight: 700;
+color: var(--Brown-800);
+}
+main .ul-instra {
+list-style-type:number;
+}
+main .ul-instra span{
+color: var(--Stone-900);
+font-weight: bold;
+}
+main #Nutrition {
+margin: 0;
+margin-left: 3.5rem;
+position: relative;
+color: var(--Stone-600);
+}
+main #Nutrition span{
+position: absolute;
+right: 135px;
+color: var(--Rose-800);
+}
+
+
+.attribution{
+    padding: .75rem;
+    margin: 2rem auto;
+    /* bottom: 1rem;
+    left: 50%; */
+    /* translate: -50% 0; */
+    border-radius: 1.2rem;
+    background-color: var(--Rose-50);
+    box-shadow: 0 0 1rem 0 var(--Brown-800);
+}
