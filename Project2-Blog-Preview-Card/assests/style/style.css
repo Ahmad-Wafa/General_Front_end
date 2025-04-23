@@ -1,0 +1,90 @@
+@import url(https://fonts.google.com/specimen/Figtree);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 500;
+}
+:root {
+    --yello-color :hsl(47, 88%, 63%);
+    --white-color :hsl(0, 0%, 100%);
+    }
+html {
+    background-color: var(--yello-color);
+}
+body {
+height: 100vh;
+font-family: Figtree;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+main {
+width: 300px;
+background-color: white;
+padding: 20px;
+border-radius: 20px;
+border:  2px black solid;
+box-shadow: 6px 7px 0px black;
+}
+main .image img {
+max-width: 100%;
+border-radius: 0.5rem;
+}
+main .le {
+    background-color: var(--yello-color);
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin: 12px 0;
+    display: block;
+    width: fit-content;
+    text-align: start;
+}
+main .date {
+    font-weight: 500;
+    margin: 14px 0 10px 0;
+}
+main h1 {
+    margin: 20px 0;
+}
+main h1 a {
+    font-size: 22px;
+    text-decoration: none;
+    color:black;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .5s;
+}
+main h1 a:hover {
+    color: var(--yello-color);
+}
+main .long-p {
+    margin: 20px 0;
+    color: #0000008c;
+}
+
+main .dec {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+main .dec img  {
+    width: 2rem;
+}
+main .dec span{
+    font-weight: 700;
+}
+.attribution {
+    position: absolute;
+    bottom: 12px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 1.5rem;
+    border: 2px solid;
+    box-shadow: 6px 6px 0px 0 black;
+}
